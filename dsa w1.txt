@@ -1,0 +1,262 @@
+1. Multiplication of 2 numbers 
+
+#include <iostream>
+using namespace std;
+
+int main(){
+int a,b,prod;
+cout<<"enter the 2  numbers"<<endl;
+cin>>a>>b;
+prod=(a*b);
+cout<<"the product is: "<<prod<<endl;
+}
+
+
+2. Find perimeter of triangle 
+
+#include <iostream>
+using namespace std;
+
+int main() {
+  cout << "enter the sides of triangle" << endl;
+  int a,b,c,peri;
+  cin>>a>>b>>c;
+  peri=(a+b+c);
+  cout<<"the perimeter is: "<<peri<<endl;
+  return 0;
+}
+
+3. Calculating simle interest
+
+#include <iostream>
+using namespace std;
+
+int main() {
+  cout << "calculating simple interest" << endl;
+  cout<< "enter the principal amount, rate of interest, time period" <<endl;
+  int p,r,t,SI;
+  cin>>p>>r>>t;
+  SI=(p*r*t)/100;
+  cout<<"simple interest so calculated is" <<SI<< endl;
+  return 0;
+
+4. Printing the values from n to 1
+
+#include <iostream>
+using namespace std;
+
+int main() {
+  cout << "write the value of n" << endl;
+  int n;
+  cin>>n;
+  int i;
+  for( i=n; i>=1; i--){
+    cout<<i<<endl;
+  }
+return 0;
+}
+
+5. Printing the factorial of a number
+
+#include <iostream>
+using namespace std;
+
+int main() {
+  cout << "for the factorial, enter a number" << endl;
+  int n;
+  cin>>n;
+  int i,result;
+  result=1;
+  for(i=1;i<=n;i++){
+    result=(result*i);
+  }
+  cout<<"the factorial of the given number is: "<<result<<endl;
+
+return 0;
+}
+
+6. A prime number 
+
+#include <iostream>
+using namespace std;
+
+int main() {
+  cout << "enter the number to check whether its prime or not " << endl;
+  int num;
+  cin>>num;
+int i,count;
+count=0;
+for(int i=1;i<=num;i++){
+if (num%i==0){
+  count++;
+}
+}
+if(count!=2){
+  cout<<"n prime"<<endl;
+}
+else{
+  cout<<"prime"<<endl;
+}
+  return 0;
+}
+
+7. Validity of a traingle 
+
+#include <iostream>
+using namespace std;
+
+int main() {
+  cout << "enter the sides of the triangle " << endl;
+  int a,b,c,sum;
+  cin>>a>>b>>c;
+  if( (a+b)>c && (b+c)>a && (c+a)>b){
+    cout<<"a valid traingle"<<endl;
+  }
+  else{
+    cout<<"not a valid traingle"<<endl;
+  }
+
+  return 0;
+}
+
+8. Print the even numbers between 1 to N
+ #include <iostream>
+using namespace std;
+
+int main() {
+  cout << "enter the number " << endl;
+  int i,n;
+  cin>>n;
+  for( i=1;i<=n;i++){
+    if(i%2==0){
+      cout<<i<<endl;
+    }
+  }
+
+  return 0;
+}
+
+9. Maximum of the 2 numbers 
+
+#include <iostream>
+using namespace std;
+
+int main() {
+  int a,b,c,max;
+  cout << "enter the numbers" << endl;
+  cin>>a>>b>>c;
+   if(a>b){
+     if(a>c){
+       cout<<a<<endl;
+     }
+     else{
+         cout<<c<<endl;
+     }
+   }
+   else if(b>c){
+     cout<<b<<endl;
+   }
+   else if(b<c){
+      cout<<c<<endl;
+   }
+  
+
+  return 0;
+}
+
+10. A solid sqaure pattern
+
+#include <iostream>
+using namespace std;
+
+int main() {
+  int n,i,j;
+  cout << "enter the number" << endl;
+  cin>>n;
+  for(i=0;i<n;i++){
+    for(j=0;j<n;j++){
+      cout<<" * ";
+    }
+  cout<<endl;
+  }
+ 
+  return 0;
+}
+
+11. Empty/hollow sqaure pattern
+
+#include <iostream>
+using namespace std;
+
+int main() {
+  int n,i,j;
+  cout << "enter the number" << endl;
+  cin>>n;
+ for(i=0;i<n;i++){
+   for(j=0;j<n;j++){
+     if(i==0 || i==n-1  ||j==0 ||j==n-1){
+       cout<<"*";
+     }
+     else{
+       cout<<" ";
+     }
+   }
+   cout<<endl;
+ }
+  return 0;
+}
+
+12. Hollow Inverted half pyramid
+
+#include <iostream>
+using namespace std;
+
+int main() {
+  int i,j,n;
+  cout<<"enter n"<<endl;
+  cin>>n;
+  for(i=0;i<n;i++){
+    for(j=0;j<n;j++){
+      if( i==0|| j==0 || j==n-i-1){
+        cout<<"*";
+      }
+      else{
+        cout<<" ";
+      }
+    }
+    cout<<endl;
+  }
+  return 0;
+}
+
+13. Full pyramid 
+
+#include <iostream>
+using namespace std;
+
+int main() {
+  int i,j,n;
+ cout<<"enter n"<<endl;
+ cin>>n;
+ for(i=0;i<n;i++){
+  int k=0;
+for(j=0;j<((2*n)-1);j++){
+
+    
+     if(j<n-i-1){
+       cout<<" ";
+     } 
+     else if(k < 2 * i + 1){
+       cout<<"*";
+       k++;
+     }
+     else{
+       cout<<" ";
+     }
+   }
+   cout<<endl;
+ }
+
+}
+
+   
